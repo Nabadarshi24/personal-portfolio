@@ -211,6 +211,137 @@ a{
 li a{
     color: white;
 }
+
+.skills-container{
+    padding-right: 45px;
+}
+
+.skills-container li{
+    list-style-type: none;
+    font-weight: bolder;
+    margin: 30px 10px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.skills-container li::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    height: 10px;
+    border-radius: 100px;
+    background-color: rgb(86,86,153,0.5);
+}
+
+.skills-container li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 0;
+    height: 10px;
+    border-radius: 100px;
+    background-color: rgb(86,86,153,1);
+
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.skills-container li.html::after{
+    animation-name: html;
+}
+
+@keyframes html {
+    to{
+        width: 90%;
+    }
+}
+
+.skills-container li.css::after{
+    animation-name: css;
+}
+
+@keyframes css {
+    to{
+        width: 85%;
+    }
+}
+
+.skills-container li.bootstrap::after{
+    animation-name: bootstrap;
+}
+
+@keyframes bootstrap {
+    to{
+        width: 80%;
+    }
+}
+
+.skills-container li.js::after{
+    animation-name: js;
+}
+
+@keyframes js {
+    to{
+        width: 77%;
+    }
+}
+
+.skills-container li.jquery::after{
+    animation-name: jquery;
+}
+
+@keyframes jquery {
+    to{
+        width: 70%;
+    }
+}
+
+.skills-container li.node::after{
+    animation-name: node;
+}
+
+@keyframes node {
+    to{
+        width: 65%;
+    }
+}
+
+.skills-container li.express::after{
+    animation-name: express;
+}
+
+@keyframes express {
+    to{
+        width: 60%;
+    }
+}
+
+.skills-container li.git::after{
+    animation-name: git;
+}
+
+@keyframes git {
+    to{
+        width: 90%;
+    }
+}
+
+.skills-container li.react::after{
+    animation-name: react;
+}
+
+@keyframes react {
+    to{
+        width: 80%;
+    }
+}
+
 .professional-experience::after{
     content: '';
     display: table;
