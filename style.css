@@ -409,3 +409,30 @@ li a{
 }
 
 /* Achievement-contact ends here */
+
+/* footer starts from here */
+.footer{
+    background-color: black;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.footer-menu a{
+    display: block;
+    color: white;
+    margin: 15px 0;
+    font-size: 1rem;
+}
+.footer-menu a:hover{
+    color: gray;
+}
+
+.footer::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* footer ends here */
