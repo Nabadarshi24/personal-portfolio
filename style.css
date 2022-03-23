@@ -181,7 +181,7 @@ a{
     border-radius: 5px;
     padding: 10px;
     transition: 0.3s;
-    height: 700px;
+    /*height: 700px;*/
 }
 .card:hover{
     box-shadow: 0px 4px 8px 5px black;
@@ -348,3 +348,64 @@ li a{
     clear: both;
 }
 /* Professional experience design ends here*/
+
+
+/* Achievement-contact starts here */
+
+.achievement-contact{
+    padding: 1% 7%;
+    background-color: #39a4ac;
+    color: white;
+}
+
+.contact{
+    text-align: center;
+}
+
+.contact input, textarea{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    resize: none;
+}
+
+.contact button{
+    background-color: #052d2f;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    width: 100px;
+    padding: 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.contact-links{
+    text-align: center;
+}
+
+.media-buttons .btn{
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 5px;
+    margin: 10px;
+    width: 50px;
+    background-color: white;
+
+}
+
+.btn:hover{
+    background-color: gray;
+}
+.achievement-contact::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Achievement-contact ends here */
